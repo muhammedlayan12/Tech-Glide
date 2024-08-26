@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Headphone Audionic F345F",
+            "description": "A classic Audionic Airpods.",
+            "image": "https://img.favpng.com/8/17/12/beats-solo-2-amazon-com-headphones-beats-electronics-audio-png-favpng-6VmQz1nVqEFtf0FVx5C5uPkTm.jpg",
+            "price": "$50"
+        },
+        {
+            "id": 2,
+            "title": "Headphone Radeon Z200",
+            "description": "A cool and good quality headphones.",
+            "image": "https://i.ebayimg.com/images/g/lKQAAOSw2stbgKVf/s-l1600.jpg",
+            "price": "$70"
+        },
+        {
+            "id": 3,
+            "title": "Headphone Beats B450",
+            "description": "Premium sound with Beats Studio wireless headphones.",
+            "image": "https://w7.pngwing.com/pngs/68/524/png-transparent-red-wireless-headphones-wearing-headphones-red-headphones.png",
+            "price": "$150"
+        },
+        {
+            "id": 4,
+            "title": "Headphone Sony X1000",
+            "description": "Top-notch noise-canceling headphones from Sony.",
+            "image": "https://banner2.cleanpng.com/20180408/khq/kisspng-noise-canceling-microphone-headphones-audio-headse-headphones-5ac9cebc206922.3545686015231751001328.jpg",
+            "price": "$200"
+        },
+        {
+            "id": 5,
+            "title": "Headphone Bose Q45",
+            "description": "Superb comfort with Bose QuietComfort 45 headphones.",
+            "image": "https://cdn1.ozone.ru/s3/multimedia-3/6308646867.jpg",
+            "price": "$250"
+        },
+        {
+            "id": 6,
+            "title": "Headphone JBL T750",
+            "description": "Active noise canceling with JBL’s signature sound.",
+            "image": "https://sun1-14.userapi.com/s/v1/if2/PRKMcRIwQqQDBpl8vBnxFhyfX-q9vAjtBWpVi-fC0iRA02t5Co0d9HkPbFLADHB_QEaKR1z4PxRrOX3s-gTDf_Ue.jpg?size=748x748&quality=96&crop=26,26,748,748&ava=1",
+            "price": "$100"
+        },
+        {
+            "id": 7,
+            "title": "Headphone Sennheiser H450",
+            "description": "A reliable wireless option with excellent battery life.",
+            "image": "https://i.ebayimg.com/images/g/RnQAAOSwtwVcwNOY/s-l500.jpg",
+            "price": "$80"
+        },
+        {
+            "id": 8,
+            "title": "Headphone Skullcandy C-Evo",
+            "description": "Bass you can feel with Skullcandy’s Crusher Evo.",
+            "image": "https://6ave.hostedimage.net/josa/BeatsStudio3MidnightBlack01.JPG",
+            "price": "$90"
+        }
+    ]
+}

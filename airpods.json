@@ -1,0 +1,60 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "AirPods Pro",
+            "description": "Apple's AirPods Pro with active noise cancellation and transparency mode.",
+            "image": "https://cdn.vox-cdn.com/uploads/chorus_asset/file/24043027/DSCF9466.jpg",
+            "price": "$249"
+        },
+        {
+            "id": 2,
+            "title": "AirPods 3rd Generation",
+            "description": "The latest AirPods with spatial audio and a new design.",
+            "image": "https://maowholesale.com/img/88739/holm0606_altpic_1/holm0606.jpg?time=1659619404",
+            "price": "$179"
+        },
+        {
+            "id": 3,
+            "title": "AirPods Max",
+            "description": "Premium over-ear headphones with high-fidelity audio and active noise cancellation.",
+            "image": "https://www.ixbt.com/img/n1/news/2020/4/3/1996266358_w640_h640_bluetooth-naushniki-apple_large.png",
+            "price": "$549"
+        },
+        {
+            "id": 4,
+            "title": "AirPods 2nd Generation",
+            "description": "The 2nd generation AirPods with the Apple H1 chip for seamless connectivity.",
+            "image": "https://static.tildacdn.com/tild6236-3732-4434-b836-663532616435/3_7.jpg",
+            "price": "$129"
+        },
+        {
+            "id": 5,
+            "title": "AirPods Pro (2nd Gen)",
+            "description": "The second generation of AirPods Pro with improved active noise cancellation and enhanced sound quality.",
+            "image": "https://m.media-amazon.com/images/I/514eIdJUbqL._AC_SL1500_.jpg",
+            "price": "$299"
+        },
+        {
+            "id": 6,
+            "title": "AirPods Max (Space Gray)",
+            "description": "Stylish AirPods Max in Space Gray with high-fidelity audio and spatial audio features.",
+            "image": "https://unboxcell.com/wp-content/uploads/2019/06/Apple-Air-Pods-2-vs-Samsung-Galaxy-Buds.jpg",
+            "price": "$549"
+        },
+        {
+            "id": 7,
+            "title": "AirPods with Charging Case",
+            "description": "AirPods with a wireless charging case for convenience and portability.",
+            "image": "https://images.macrumors.com/t/wazWGr_XFoku3quJf9Fe1DbKsKk=/1600x1200/smart/article-new/2022/05/airpods-3-purple.jpg",
+            "price": "$199"
+        },
+        {
+            "id": 8,
+            "title": "AirPods Pro with MagSafe Case",
+            "description": "AirPods Pro featuring a MagSafe case for easy charging and enhanced convenience.",
+            "image": "https://www.phonetoday.it/wp-content/uploads/2019/07/apple-airpods.jpg",
+            "price": "$249"
+        }
+    ]
+}

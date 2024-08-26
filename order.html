@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://media.istockphoto.com/id/918978530/vector/eco-shopping.jpg?s=612x612&w=0&k=20&c=LPEhpoHnSq46HJ9HkTwpsALSZn4l21gy74aHkwZXMuM=" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Order</title>
+</head>
+<style>
+    .order-section {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.order-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.order-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.status.processing {
+    color: orange;
+}
+
+.status.delivered {
+    color: green;
+}
+
+.view-details-btn {
+    background-color: #386641;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.view-details-btn:hover {
+    background-color: #6A994E;
+}
+
+.order-details {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.order-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+</style>
+<body>
+
+
+
+    
+    <header class="header">
+        <div class="h-container">
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                +00124767384
+            </div>
+            <div class="offer">
+                <i class="fa-solid fa-gift"></i>
+                Get 15% off on your first purchase |    Shop Now
+            </div>
+            <div class="lang area">
+                <select name="languages" id="lang">
+                    <option value="eng">Eng</option>
+                    <option value="urdu">Urdu</option>
+                    <option value="german">German</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="Arabic">Arabic</option>
+
+                </select>
+                <select name="location" id="area">
+                    <option value="us">Location</option>
+                    <option value="us">Us</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="gy">Germany</option>
+                    <option value="spain">Spain</option>
+                    <option value="sa">Saudia Arabia</option>
+
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="name">
+            <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/store.png" alt="store icon">
+            Tech Glide
+        </div>
+        <div class="navigation">
+          <a href="index.html">Home</a>
+            <a href="deals.html">Deals</a>
+            <a href="product.html">Products</a>
+            <a href="account.html">Account</a>
+        </div>
+    
+        <div class="acc cart">
+            <div>
+            <i class="fa-solid fa-user"></i>
+            Account
+            </div>
+            <div>
+            <i class="fa-solid fa-shopping-cart"></i>
+            Cart
+            </div>
+            <div class="account">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4042/4042356.png" alt="" width="40">
+                        <span class="m-2 text-decoration-none">Muhammad Layan</span>
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="account.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="order.html">Orders</a></li>
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="log.html">Logout</a></li>
+                    </ul>
+    
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="order-section">
+        <h2>Your Orders</h2>
+        <div class="order-list">
+            <div class="order-card">
+                <h3>Order #12345</h3>
+                <p>Date: 25th August 2024</p>
+                <p>Status: <span class="status processing">Processing</span></p>
+                <button class="view-details-btn">View Details</button>
+                <div class="order-details">
+                    <div class="order-item">
+                        <img src="https://maowholesale.com/img/88739/holm0606_altpic_1/holm0606.jpg?time=1659619404" alt="Product A">
+                        <p>Item 1: Airpods</p>
+                    </div>
+                    <div class="order-item">
+                        <img src="https://i.ebayimg.com/images/g/RnQAAOSwtwVcwNOY/s-l500.jpg" alt="Product B">
+                        <p>Item 2: Headphone</p>
+                    </div>
+                    <p>Total Price: $99.99</p>
+                </div>
+            </div>
+    
+            <div class="order-card">
+                <h3>Order #12346</h3>
+                <p>Date: 20th August 2024</p>
+                <p>Status: <span class="status delivered">Delivered</span></p>
+                <button class="view-details-btn">View Details</button>
+                <div class="order-details">
+                    <div class="order-item">
+                        <img src="https://sun1-14.userapi.com/s/v1/if2/PRKMcRIwQqQDBpl8vBnxFhyfX-q9vAjtBWpVi-fC0iRA02t5Co0d9HkPbFLADHB_QEaKR1z4PxRrOX3s-gTDf_Ue.jpg?size=748x748&quality=96&crop=26,26,748,748&ava=1" alt="Product C">
+                        <p>Item 1: Headphone</p>
+                    </div>
+                    <div class="order-item">
+                        <img src="https://m.media-amazon.com/images/I/514eIdJUbqL._AC_SL1500_.jpg" alt="Product D">
+                        <p>Item 2: Airpods</p>
+                    </div>
+                    <p>Total Price: $149.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     -->
+    
+
+
+
+     <main>
+        <div class="cart-container"></div>
+    </main>
+    
+    <main>
+        <div class="checkout-cart-container"></div>
+        <form class="checkout-form">
+            <h2>Shipping Details</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Name" id="shipping-name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" id="shipping-email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Address" id="shipping-address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="City" id="shipping-city" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Postal Code" id="shipping-postal" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Phone Number" id="shipping-phone" required>
+            </div>
+
+            <h2>Payment Methods</h2>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                    <label for="credit-card">Credit/Debit Card</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="paypal" name="payment-method" value="paypal">
+                    <label for="paypal">PayPal</label>
+                </div>
+                <div class="payment-method">
+                    <input type="radio" id="crypto" name="payment-method" value="crypto">
+                    <label for="crypto">Cryptocurrency</label>
+                </div>
+            </div>
+
+            <div class="payment-details credit-card-details">
+                <h3>Credit/Debit Card Details</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Card Number" id="card-number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Name on Card" id="card-name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Expiry Date (MM/YY)" id="card-expiry" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="CVV" id="card-cvv" required>
+                </div>
+            </div>
+
+            <div class="payment-details paypal-details" style="display: none;">
+                <p>You will be redirected to PayPal for payment processing.</p>
+            </div>
+
+            <div class="payment-details crypto-details" style="display: none;">
+                <p>Payment details will be provided upon checkout.</p>
+            </div>
+
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </main>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <h4>Subscribe to our Newsletter</h4>
+            <form class="subscribe-form" novalidate>
+                <input id="f-input" type="email" placeholder="Enter your email" required aria-describedby="emailisreq">
+                <span id="emailisreq" role="alert" aria-live="assertive"></span>
+                <button type="submit" id="f-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-icons">
+            <h4>Follow Us</h4>
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Tech Glide. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const viewDetailButtons = document.querySelectorAll('.view-details-btn');
+
+    viewDetailButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const orderDetails = this.nextElementSibling;
+            orderDetails.style.display = orderDetails.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+});
+
+</script>
+</html>

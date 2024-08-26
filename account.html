@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://media.istockphoto.com/id/918978530/vector/eco-shopping.jpg?s=612x612&w=0&k=20&c=LPEhpoHnSq46HJ9HkTwpsALSZn4l21gy74aHkwZXMuM=" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Account</title>
+</head>
+<style>
+    
+ /* Shared styles from the previous pages will be here */
+
+/* User Account Specific Styles */
+.user-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.profile-sidebar {
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.account-details {
+    width: 75%;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+}
+
+.tab-btn.active {
+    border-bottom: 2px solid #386641;
+    color: #386641;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #386641;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #6A994E;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    background-color: #BC4749;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #A73335;
+}
+
+</style>
+<body>
+    
+
+    <header class="header">
+        <div class="h-container">
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                +00124767384
+            </div>
+            <div class="offer">
+                <i class="fa-solid fa-gift"></i>
+                Get 15% off on your first purchase |    Shop Now
+            </div>
+            <div class="lang area">
+                <select name="languages" id="lang">
+                    <option value="eng">Eng</option>
+                    <option value="urdu">Urdu</option>
+                    <option value="german">German</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="Arabic">Arabic</option>
+
+                </select>
+                <select name="location" id="area">
+                    <option value="us">Location</option>
+                    <option value="us">Us</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="gy">Germany</option>
+                    <option value="spain">Spain</option>
+                    <option value="sa">Saudia Arabia</option>
+
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="name">
+            <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/256x256/plain/store.png" alt="store icon">
+            Tech Glide
+        </div>
+        <div class="navigation">
+          <a href="index.html">Home</a>
+            <a href="deals.html">Deals</a>
+            <a href="product.html">Products</a>
+            <a href="account.html">Account</a>
+        </div>
+    
+        <div class="acc cart">
+            <div>
+            <i class="fa-solid fa-user"></i>
+            Account
+            </div>
+            <div>
+            <i class="fa-solid fa-shopping-cart"></i>
+            Cart
+            </div>
+            <div class="account">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4042/4042356.png" alt="" width="40">
+                        <span class="m-2 text-decoration-none">Muhammad Layan</span>
+
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="account.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="order.html">Orders</a></li>
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="log.html">Logout</a></li>
+                    </ul>
+    
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- User Account Section -->
+    <section class="container user-account">
+        <h2 class="my-4">Welcome, Muhammad Layan</h2>
+        <div class="account-content">
+            <!-- Profile Sidebar -->
+            <div class="profile-sidebar">
+                <img src="https://cdn-icons-png.flaticon.com/512/4042/4042356.png" alt="User Avatar" class="avatar">
+                <h3>Muhammad Layan</h3>
+                <p>Email: muhammedlayan12@gmail.com</p>
+                <button class="btn-primary" id="edit-profile-btn">Edit Profile</button>
+                <a href="log.html" class="btn-secondary" id="logout-btn" >Logout</a>
+            </div>
+
+            <!-- Account Details Section -->
+            <div class="account-details">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="profile">Profile</button>
+                    <button class="tab-btn" data-tab="orders">Order History</button>
+                    <button class="tab-btn" data-tab="settings">Settings</button>
+                </div>
+
+                <div class="tab-content active" id="profile">
+                    <h3>Profile Information</h3>
+                    <p><strong>Name:</strong>Muhammad Layan</p>
+                    <p><strong>Email:</strong>muhammedlayan12@gmail.com</p>
+                    <p><strong>Phone:</strong> +1234567890</p>
+                </div>
+
+                <div class="tab-content" id="orders">
+                    <h3>Order History</h3>
+                    <ul>
+                        <li>Order #001 - $50.00 - Delivered</li>
+                        <li>Order #002 - $30.00 - In Transit</li>
+                        <li>Order #003 - $20.00 - Delivered</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="settings">
+                    <h3>Account Settings</h3>
+                    <p><strong>Change Password:</strong></p>
+                    <input type="password" placeholder="Current Password">
+                    <input type="password" placeholder="New Password">
+                    <button class="btn-primary">Update Password</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="subscribe">
+            <h4>Subscribe to our Newsletter</h4>
+            <form class="subscribe-form" novalidate>
+                <input id="f-input" type="email" placeholder="Enter your email" required aria-describedby="emailisreq">
+                <span id="emailisreq" role="alert" aria-live="assertive"></span>
+                <button type="submit" id="f-btn">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-icons">
+            <h4>Follow Us</h4>
+            <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Tech Glide. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="jquery-3.7.1.js"></script>
+<script src="script.js"></script>
+<script>
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+    
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove 'active' class from all buttons and content
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+    
+                // Add 'active' class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(button.dataset.tab).classList.add('active');
+            });
+        });
+    });
+    </script>
+</html>
